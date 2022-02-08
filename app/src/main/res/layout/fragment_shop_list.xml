@@ -10,7 +10,7 @@
             android:id="@+id/tvDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Добрый день"
+            android:text="@string/shop_list_title"
             android:textColor="@color/colorTextBlack"
             android:textSize="24sp"
     />
