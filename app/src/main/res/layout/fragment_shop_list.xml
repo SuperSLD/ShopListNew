@@ -1,19 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        android:id="@+id/vgSplash"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
->
+<LinearLayout android:id="@+id/vgSplash"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="22dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <TextView
             android:id="@+id/tvDefault"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ShopList"
+            android:text="@string/shop_list_title"
             android:textColor="@color/colorTextBlack"
-            android:textSize="24dp"
+            android:textSize="24sp"
     />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="13dp"
+        >
+        <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/cvSearch"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="21dp"
+        app:cardElevation="8dp"
+        >
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="3 января"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="24sp"
+            android:gravity="center"
+            />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="10dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/cvCreate"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="21dp"
+            app:cardElevation="8dp"
+            >
+        <ImageView
+        android:id="@+id/addNewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="center"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="24sp"
+        />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="10dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/cvSettings"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="21dp"
+            app:cardElevation="8dp"
+            >
+        <ImageView
+            android:id="@+id/addSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings"
+            android:layout_gravity="center"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="24sp"
+            />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Осталось 4 списка"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextBlack"
+        android:layout_marginBottom="4dp"
+        />
+    <online.juter.supersld.view.data.JTLineProgress
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+
+
 
 </LinearLayout>
