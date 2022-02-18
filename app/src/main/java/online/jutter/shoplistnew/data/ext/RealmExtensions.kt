@@ -2,6 +2,11 @@ package online.jutter.shoplistnew.data.ext
 
 import io.realm.RealmList
 import io.realm.RealmObject
+import java.util.*
+
+fun getUUID(): String {
+    return UUID.randomUUID().toString()
+}
 
 /**
  * Переход от списка к реалм списку.
