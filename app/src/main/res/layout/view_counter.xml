@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+
+        android:orientation="horizontal"
+>
+    <ImageButton
+            android:id="@+id/btnRemove"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:background="@drawable/shape_blue_solid"
+            app:srcCompat="@drawable/ic_remove"/>
+    <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="50dp"
+            android:layout_height="32dp"
+            android:background="@drawable/shape_grey_solid"
+            tools:text="43"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginStart="4dp"
+    />
+    <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:background="@drawable/shape_blue_solid"
+            app:srcCompat="@drawable/ic_add"
+            android:layout_marginStart="4dp"/>
+</LinearLayout>

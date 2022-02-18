@@ -11,6 +11,7 @@ import java.util.*
 fun PositionDomain.toRealm() = PositionRealm(
     id = id,
     name = name,
+    mes = mes,
     count = count,
     selected = selected,
 )
@@ -18,6 +19,7 @@ fun PositionDomain.toRealm() = PositionRealm(
 fun PositionRealm.toDomain() = PositionDomain(
     id = id,
     name = name,
+    mes = mes,
     count = count,
     selected = selected,
 )

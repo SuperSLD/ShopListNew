@@ -7,9 +7,10 @@ data class ShopListDomain(
     val timestamp: Long,
 )
 
-open class PositionDomain(
-    var id: String = "",
-    var name: String = "",
-    var count: Int = 0,
-    var selected: Boolean = false
+data class PositionDomain(
+    var id: String,
+    var name: String,
+    var mes: String,
+    var count: Int,
+    var selected: Boolean,
 )

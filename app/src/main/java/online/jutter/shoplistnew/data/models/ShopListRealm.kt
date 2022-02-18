@@ -16,6 +16,7 @@ open class PositionRealm(
     @PrimaryKey
     var id: String = "",
     var name: String = "",
+    var mes: String = "",
     var count: Int = 0,
     var selected: Boolean = false
 ) : RealmObject()

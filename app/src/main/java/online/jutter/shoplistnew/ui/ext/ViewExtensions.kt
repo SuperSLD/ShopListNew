@@ -168,3 +168,10 @@ fun EditText.addTextChangeListener(listener: (String) -> Unit) {
     })
 }
 
+fun Vibrator.shortVibration() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE))
+    } else {
+        vibrate(100)
+    }
+}
